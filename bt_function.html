@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function myColor(arr) {
+    //     alert(arr.toString());
+    // }
+    // let arr1 = ["thanh","linh"];
+    // myColor(arr1);
+    // alert(arr1);
+    //bt2
+    // let num= prompt("Enter a number");
+    //  num.toString();
+    // let result = [num[0]];
+    // console.log(num);
+    //
+    // for(let i=0; i<=num.length; i++) {
+    //     if ((num[i - 1] % 2 == 0) && (num[i] % 2 == 0)) {
+    //         result.push("-", +num[i]);
+    //     } else {
+    //         result.push(num[i]);
+    //     }
+    // }
+    //     alert(result.join(""));
+    //bt3
+     let number = prompt("Enter a number");
+     let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+     let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+     let result = [];
+     for(let i = 0; i <number.length;i++){
+         if(UPPER.indexOf(number[i]) !== -1) {
+             result.push(number[i].toLowerCase());
+         }   else if(LOWER.indexOf(number[i])!== -1){
+             result.push(number[i].toUpperCase());
+         }
+         else result.push(number[i]);
+
+     }
+     alert(result.join(""));
+
+
+
+</script>
+</body>
+</html>
